@@ -10,7 +10,10 @@ const Home = () => {
       </div>
 
       <div className="home__row">
-        <Product />
+        <Product title='The Lean Startup' 
+                 price={2000}
+                 image="https://www.orderyourbooks.com/wp-content/uploads/2022/08/41-2.jpg"
+                 rating={4}/>
         <Product />
       </div>
 

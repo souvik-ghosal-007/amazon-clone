@@ -1,26 +1,28 @@
 import React from 'react'
 import './Product.css'
 
-const Product = () => {
+const Product = ({title, image, price, rating}) => {
   return (
     <div className='product'>
       <div className="product__info">
 
         <span className='product__name'>
-          Lorem ipsum
+          {title}
         </span>
 
         <span className='product__price'>
-          Rs. 2000
+          Rs. {price}
         </span>
 
-        <span className="product__rating">
-          &#9733;&#9733;&#9733;&#9733;&#9733;
-        </span>
+        <div className='product__rating'>
+          {Array(rating).fill().map((_, i) => (
+            <span>&#9733;</span>
+          ))}
+        </div>
 
       </div>
       
-      <img src="https://www.orderyourbooks.com/wp-content/uploads/2022/08/41-2.jpg" alt="" className="product__img" />
+      <img src={image} alt="" className="product__img" />
 
       <button className="product_addToCartBtn">Add to cart</button>
 

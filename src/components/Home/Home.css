@@ -4,7 +4,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 1330px;
 }
 
 .home__banner {  
@@ -22,5 +22,4 @@
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
-
 }
